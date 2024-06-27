@@ -4,7 +4,6 @@ import { Layout, Menu, Button, Dropdown, Badge } from 'antd';
 import {
   ShoppingCartOutlined,
   MenuOutlined,
-  BulbOutlined,
 } from '@ant-design/icons';
 import { useCart } from '../../hooks/useCart';
 import { useAuth } from '../../hooks/useAuth';
@@ -15,14 +14,6 @@ const { Header } = Layout;
 export default function CustomHeader() {
   const { user, logout } = useAuth();
   const { cart } = useCart();
-
-  const navigate = (path) => {
-    
-  };
-
-  const goToCartPage = () => {
-    
-  };
 
   return (
     <Header className={`${classes.header} header`}>
@@ -47,7 +38,9 @@ export default function CustomHeader() {
                       <Link to="/orders">Orders</Link>
                     </Menu.Item>
                     <Menu.Item key="logout">
-                      <a onClick={logout}>Logout</a>
+                      <Button type="text" onClick={logout}>
+                        Logout
+                      </Button>
                     </Menu.Item>
                   </Menu>
                 }
@@ -82,4 +75,3 @@ export default function CustomHeader() {
     </Header>
   );
 }
-

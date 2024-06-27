@@ -10,8 +10,7 @@ function App() {
 
   useEffect(() => {
     setLoadingInterceptor({ showLoading, hideLoading });
-  }, []);
-
+  }, [showLoading, hideLoading]); //set the [] ->, [showLoading, hideLoading] 
   return (
     <>
       <Loading />

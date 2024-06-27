@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  margin: 0 2rem 6rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 35rem;
+  margin: 0 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary > div {
+  display: flex;
+  margin-top: 0.7rem;
+  align-items: center;
+}
+
+.summary span {
+  font-size: 1.2rem;
+  color: #333;
+}
+.summary h3 {
+  margin: 0 1rem 0 0;
+  flex-basis: 5rem;
+  color: #666;
+}
+
+.map {
+  width: 100%;
+  max-width: 35rem;
+  margin: 0 3rem 2rem 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buttons_container {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 2rem;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.buttons button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem 6rem 1rem;
+  }
+
+  .content,
+  .map {
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .buttons {
+    width: 100%;
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,94 @@
+.header {
+  background-color: #007bff; 
+  /* padding: 0.5rem 1rem; */
+  color: white;
+  text-align: center;
+  height: 15vh; 
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between;  */
+}
+
+.header a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: #e72929;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; 
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+}
+
+.logo {
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.nav {
+  flex: 1;
+  text-align: right;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  position: relative;
+  margin-left: 1rem; /* Adjust margin as needed */
+}
+
+.nav ul a {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: whitesmoke;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+
+.cart_count {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+

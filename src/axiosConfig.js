@@ -4,12 +4,12 @@
 // axios.defaults.baseURL =API_BASE_URL
   
 // process.env.NODE_ENV !== 'production' ? 'http://localhost:5000' : '/';
-import axios from 'axios';
+// import axios from 'axios';
 
-const API_BASE_URL = process.env.NODE_ENV !== 'production' 
-  ?  'https://quickbite-food-app-backend.onrender.com' 
-  : '/';
+// const API_BASE_URL = process.env.NODE_ENV !== 'production' 
+//   ?  'https://quickbite-food-app-backend.onrender.com' 
+//   : '/';
 
-axios.defaults.baseURL = API_BASE_URL;
+// axios.defaults.baseURL = API_BASE_URL;
 
-export default axios;
+// export default axios;

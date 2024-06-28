@@ -1,36 +1,36 @@
 import axios from 'axios';
-import API_BASE_URL from '../global.js';
-
+// import API_BASE_URL from '../global.js';
+//removing all the urls from global
 export const createOrder = async order => {
   try {
-    const { data } = axios.post(`${API_BASE_URL}/api/orders/create`, order);
+    const { data } = axios.post(`/api/orders/create`, order);
     return data;
   } catch (error) {}
 };
 
 export const getNewOrderForCurrentUser = async () => {
-  const { data } = await axios.get(`${API_BASE_URL}/api/orders/newOrderForCurrentUser`);
+  const { data } = await axios.get(`/api/orders/newOrderForCurrentUser`);
   return data;
 };
 
 export const pay = async paymentId => {
   try {
-    const { data } = await axios.put(`${API_BASE_URL}/api/orders/pay`, { paymentId });
+    const { data } = await axios.put(`/api/orders/pay`, { paymentId });
     return data;
   } catch (error) {}
 };
 
 export const trackOrderById = async orderId => {
-  const { data } = await axios.get(`${API_BASE_URL}/api/orders/track/` + orderId);
+  const { data } = await axios.get(`/api/orders/track/` + orderId);
   return data;
 };
 
 export const getAll = async state => {
-  const { data } = await axios.get(`${API_BASE_URL}/api/orders/${state ?? ''}`);
+  const { data } = await axios.get(`/api/orders/${state ?? ''}`);
   return data;
 };
 
 export const getAllStatus = async () => {
-  const { data } = await axios.get(`${API_BASE_URL}/api/orders/allstatus`);
+  const { data } = await axios.get(`/api/orders/allstatus`);
   return data;
 };
